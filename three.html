@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+  </head>
+  <body>
+    
+    <form>
+        <h2>Welp! Review Form</h2>
+        <br>
+
+        <label for="name">Reviewer name:</label> 
+        <input type= "text"  id="name"required />
+        <br><br>
+
+        <label for="email">Alamat email:</label>
+        <input type="email" id="email" required />
+        <br><br>
+
+        <label for="phone">Nomor Telepon:</label>
+        <input type="number" id="phone" required>
+        <br><br>
+
+        <label for="review">What are you reviewing?:</label> 
+        <input type= "text"  id="review" required />
+        <br><br>
+
+        <label> Would you try again?:</label><br>
+        <input type="radio" name="try-again" value="yes">yes <br>
+        <input type="radio" name="try-again" value="no">no <br>
+        <input type="radio" name="try-again" value="not-sure">not sure <br>
+        <br><br>
+
+        <label for="">Overall Rating(out of 5)</label>
+        <input type="number" min="0" max="5" required>
+        <br><br>
+
+        <label for="my-review">My Review:</label><br>
+        <textarea name="my-review" id="my-review" maxlength="250" placeholder="write your review here..." required></textarea>
+        <br><br>>
+
+        <input type="submit" value="send review">
+    </form>
+  </body>
+</html>

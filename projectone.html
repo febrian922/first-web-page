@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Restaurant</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffaf0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #ff4500;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        } 
+        #header-img {
+            max-width: 120px;
+            border-radius: 20%;
+            margin-right: 20px;
+        }
+        .header-content {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .header-content h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 3px solid #ff4500;
+            padding-bottom: 10px;
+            border-radius: 4px;
+        }
+        article {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        article img {
+            max-width: 150px;
+            border-radius: 8px;
+        }
+        form {
+            background-color: #fdf5e6;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="number"], textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4x;
+        }
+        input[type="submit"]{
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="logo-title"> 
+            <div class="header-content">
+            <img id="header-img" src="Team_Kakashi.webp" alt="Naruto Restaurant">
+                <h1>Naruto Ramen</h1>
+            </div>
+        </div>
+        <nav>
+            <a href="#menu">menu</a>
+            <a href="#order-form">order form</a>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <img src="ramen.jpg" alt="ramen">
+                <h2>Naruto Ramen</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, fugiat modi necessitatibus molestiae neque facere voluptatibus non optio magnam totam corporis sed. Accusamus aspernatur tempora dicta omnis. Officia, dignissimos praesentium?</p>
+            </article>
+            <article>
+                <img src="sushi.jpg" alt="sushi">
+                <h2>Sasuke Sushi</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, aperiam explicabo fugit nobis, placeat reprehenderit exercitationem commodi necessitatibus tempora, dolorum cupiditate esse. Doloribus cupiditate expedita odio, ex rerum et magni!</p>
+            </article>
+            <article>
+                <img src="tamago-fried-rice.jpg" alt="tamago fried rice">
+                <h2>Sakura Egg Fried Rice</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nemo deleniti unde! Ad asperiores assumenda, omnis velit libero quidem incidunt, dolor placeat repudiandae temporibus exercitationem quam quos beatae harum animi!</p>
+            </article>
+        </section>
+        <section id="order-form">
+            <h2>Place your order</h2>
+            <form>
+                <label for="ramen-order">Naruto Ramen order:</label>
+                <input type="number" id="ramen-order" name="ramen-order" min="0" required>
+                <label for="sushi-order">Naruto Ramen order:</label>
+                <input type="number" id="sushi-order" name="sushi-order" min="0" required>
+                <label for="fried-rice-order">Naruto Ramen order:</label>
+                <input type="number" id="fried-rice-order" name="fried-rice-order" min="0" required>
+
+                <h3>Extra/add on</h3>
+                <label><input type="checkbox" name="extra" value="sous"> sous</label>
+                <label><input type="checkbox" name="extra" value="eeg"> eeg</label>
+                <label><input type="checkbox" name="extra" value="fishcake"> fishcake</label>
+                
+                <label for="Special-Request"> Special Request</label>
+                <textarea name="Special-Request" id="Special-Request"></textarea>
+                
+                <input type="submit" value="Go to Checkout">
+            </form>
+        </section>
+    </main>
+  </body>
